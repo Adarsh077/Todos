@@ -1,0 +1,134 @@
+body {
+	background: linear-gradient(to right, #fdfbfb, #ebedee);
+	font-family: 'Roboto';
+	font-weight: 400;
+}
+
+a, a:hover, a:active, a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus, button:focus, button:active, button:hover, label:focus, .btn:active, .btn.active {
+	outline: 0px !important;
+	-webkit-appearance: none;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+hr{
+	margin: 0px;
+}
+
+.card {
+	background-color: transparent;
+	border: none;
+}
+
+.card-img-top {
+	position: relative;
+	background-image: url('https://source.unsplash.com/collection/583479/400x300');
+	background-size: cover;
+	background-position: center;
+	height: 30vh;
+	border-radius: 0px!important;
+}
+
+.card-body {
+	padding: 0px;
+	height: 65vh;
+}
+
+.date {
+	background: linear-gradient(to top, #000000a8, #00000000);
+	font-size: 1.5em;
+	font-weight: 500;
+	width: 100%;
+}
+
+.card-body {
+	overflow: scroll;
+}
+
+.item {
+	font-size: 1.2em;
+	position: relative;
+}
+
+.todo .delete {
+	position: absolute;
+	right: 0!important;
+}
+
+.fa-trash-o:hover {
+	color: #bd0000;
+}
+
+.input-todo-item {
+	position: absolute;
+	bottom: 0;
+	font-size: 1.2em;
+	padding: .5em 1em;
+}
+
+.input-todo-item input {
+	border: none;
+	background-color: transparent;
+	width: 95%!important;
+	color: #0984e3;
+}
+
+.input-todo-item input::placeholder {
+	color: #0984e3;
+}
+
+.input-todo-item .fa {
+	color: #0984e3;
+	font-size: 1.4em;
+}
+
+.done {
+	text-decoration: line-through;
+	color: #6c757d;
+	font-weight: 300;
+}
+
+.rounded-lg {
+	border-radius: 15px 15px 0px 0px!important;
+}
+
+@media (min-width: 1200px) {
+	.container-30 {
+		width: 28%;
+		margin: auto;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.container-30 {
+		width: 40%;
+		margin: auto;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.container-30 {
+		width: 50%;
+		margin: auto;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.container-30 {
+		width: 100%;
+		margin: auto;
+	}
+	.card-body {
+		height: 70vh;
+	}
+	.rounded-lg {
+		border-radius: 0px 0px 0px 0px!important;
+	}
+}
