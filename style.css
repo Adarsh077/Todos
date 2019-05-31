@@ -21,7 +21,6 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 hr{
 	margin: 0px;
 }
-
 .card {
 	background-color: transparent;
 	border: none;
@@ -29,7 +28,7 @@ hr{
 
 .card-img-top {
 	position: relative;
-	background-image: url('https://source.unsplash.com/collection/583479/400x300');
+	background-image: url('https://source.unsplash.com/collection/190727/1600x900');
 	background-size: cover;
 	background-position: center;
 	height: 30vh;
@@ -39,13 +38,20 @@ hr{
 .card-body {
 	padding: 0px;
 	height: 65vh;
+	background-color: #fff;
 }
 
 .date {
-	background: linear-gradient(to top, #000000a8, #00000000);
+	background: linear-gradient(to top, #1b1b1ba8, #00000000);
 	font-size: 1.5em;
+	padding: 1em;
 	font-weight: 500;
 	width: 100%;
+}
+
+.fa-expand{
+	position: absolute;
+	bottom: 0;
 }
 
 .card-body {
@@ -60,11 +66,9 @@ hr{
 .todo .delete {
 	position: absolute;
 	right: 0!important;
+	color: #28a745;
 }
 
-.fa-trash-o:hover {
-	color: #bd0000;
-}
 
 .input-todo-item {
 	position: absolute;
@@ -77,26 +81,22 @@ hr{
 	border: none;
 	background-color: transparent;
 	width: 95%!important;
-	color: #0984e3;
+	color: #6c757d;
 }
 
 .input-todo-item input::placeholder {
-	color: #0984e3;
-}
-
-.input-todo-item .fa {
-	color: #0984e3;
-	font-size: 1.4em;
-}
-
-.done {
-	text-decoration: line-through;
 	color: #6c757d;
-	font-weight: 300;
 }
 
-.rounded-lg {
+.rounded-top-lg {
 	border-radius: 15px 15px 0px 0px!important;
+}
+
+.fa-expand{
+	padding: 1em;
+	position: absolute;
+	right: 0;
+	color: #fff!important;
 }
 
 @media (min-width: 1200px) {
@@ -128,7 +128,7 @@ hr{
 	.card-body {
 		height: 70vh;
 	}
-	.rounded-lg {
+	.rounded-top-lg {
 		border-radius: 0px 0px 0px 0px!important;
 	}
 }

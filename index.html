@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="./vendors/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./vendors/css/font-awesome.css">
+	<script src="https://kit.fontawesome.com/2909be61a1.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./style.css">
 	<title> Task UI </title>
@@ -17,37 +17,30 @@
 
 	<div class="container-30 ">
 
-		<div class="card shadow rounded-lg">
-			<div class="card-img-top rounded-lg d-flex">
-				<div class="align-self-end px-2 text-light date">
+		<div class="card shadow rounded-top-lg">
+			<div class="card-img-top rounded-top-lg d-flex">
+				<a href="#" class="fas fa-expand"></a>
+				<div class="align-self-end px-2 py-1 text-light date">
 					Thursday, May 30
 				</div>
 			</div>
-			<div class="card-body bg-light">
-				<div class="todo pending p-3 pl-3">
+			<div class="card-body">
+				<div class="todo pending p-3">
 					<div class="item mb-3">
-						<a href="#" class="fa fa-circle-thin co" job="complete" id="0"></a>
-						<p class="d-inline ml-2">Buy a bread</p>
-						<a href="#" class="fa fa-trash-o delete"></a>
-					</div>
-					<div class="item mb-3">
-						<a href="#" class="fa fa-circle-thin co" job="complete" id="0"></a>
-						<p class="d-inline ml-2">Buy a bread</p>
-						<a href="#" class="fa fa-trash-o delete"></a>
+						<p class="d-inline ml-2">TODO</p>
+						<a href="#" class="far fa-check-circle delete" onclick='completed(this)'></a>
 					</div>
 				</div>
-				<hr>
-				<div class="todo completed p-3 pl-3">
+				<!-- <div class="todo completed px-3">
 					<div class="item mb-3">
-						<a href="#" class="fa fa-check-circle text-success " job="complete" id="0"></a>
-						<p class="d-inline ml-2 done">Make Back end for E-commerce Site and send to Yash</p>
+						<a href="#" class="fa fa-check-circle text-success" onclick="pending(this)"></a>
+						<p class="d-inline ml-2 done">Make Back end for E-commerce Site</p>
 						<a href="#" class="fa fa-trash-o delete"></a>
 					</div>
-				</div>
+				</div> -->
 				<div class="mt-5"></div>
-				<div class="input-todo-item d-flex w-100 pb-2 bg-light">
-					<input type="text" id="input" placeholder="Add a to-do">
-					<a href="#" class="fa fa-plus-circle justify-content-end"></a>
+				<div class="input-todo-item d-flex w-100 py-2 pl-4 bg-light">
+					<input type="text" id="input" placeholder="Add a TODO">
 				</div>
 			</div>
 		</div>
