@@ -81,9 +81,12 @@ hr{
 	border: none;
 	background-color: transparent;
 	width: 95%!important;
-	color: #6c757d;
+  color: transparent;
+  text-shadow: 0 0 0 #000;
 }
-
+.input-todo-item input:focus {
+	outline: none;
+}
 .input-todo-item input::placeholder {
 	color: #6c757d;
 }
