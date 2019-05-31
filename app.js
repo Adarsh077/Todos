@@ -1,3 +1,5 @@
+// If you are interested or you want develope webpages contact me on: 
+// ZllYiEZw9HoF5DFOEnYUimugcJaHp36WrURzRyZGHkE=
 // Full screen toggler
 document.querySelector('.fa-expand').addEventListener('click', (ele) => {
 	var elem = document.querySelector("html");
