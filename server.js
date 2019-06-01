@@ -6,14 +6,9 @@ var methodOverride = require('method-override')
 
 
 const TodosDocument = require('./models/Todo');
-mongoose.connect('mongodb+srv://AJ:$077Adarsh@cluster0-3l0im.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true });
 
-let todoData;
-const findData = () => {
-	TodosDocument.find({})
-		.then(data => todoData = data)
-		return todoData;
-}
+// MongoDB atlas: mongodb+srv://AJ:$077Adarsh@cluster0-3l0im.mongodb.net/test?retryWrites=true&w=majority
+mongoose.connect('mongodb+srv://AJ:$077Adarsh@cluster0-3l0im.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true });
 
 const app = express();
 
@@ -33,9 +28,12 @@ app.use(methodOverride('_method'))
 
 // Routes
 app.get('/', (req, res) => {
-	res.render('index', {
-		data: findData()
-	})
+	TodosDocument.find({})
+		.then(data => {
+			res.render('index', {
+				data: data
+			})
+		})
 })
 
 app.post('/index', (req,res)=>{
