@@ -9,6 +9,13 @@ a, a:hover, a:active, a:visited {
 	text-decoration: none;
 }
 
+button, button:active, button:hover{
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	background-color: transparent;
+}
+
 textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus, button:focus, button:active, button:hover, label:focus, .btn:active, .btn.active {
 	outline: 0px !important;
 	-webkit-appearance: none;
@@ -28,7 +35,7 @@ hr{
 
 .card-img-top {
 	position: relative;
-	background-image: url('https://source.unsplash.com/collection/190727/1600x900');
+	background-image: url('https://source.unsplash.com/collection/190727/500x300/daily');
 	background-size: cover;
 	background-position: center;
 	height: 30vh;
