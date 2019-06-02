@@ -8,7 +8,7 @@ var methodOverride = require('method-override')
 const TodosDocument = require('./models/Todo');
 
 // MongoDB atlas: mongodb+srv://AJ:$077Adarsh@cluster0-3l0im.mongodb.net/test?retryWrites=true&w=majority
-mongoose.connect('mongodb://localhost:27017/Todos', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://AJ:$077Adarsh@cluster0-3l0im.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true });
 
 const app = express();
 
