@@ -25,6 +25,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 	display: none;
 }
 
+
 hr{
 	margin: 0px;
 }
@@ -35,8 +36,7 @@ hr{
 
 .card-img-top {
 	position: relative;
-	background-image: url('https://source.unsplash.com/collection/4700076/1600x900/daily');
-	
+	background-image: url('https://source.unsplash.com/collection/4906747/400x200');
 	background-size: cover;
 	background-position: center;
 	height: 30vh;
