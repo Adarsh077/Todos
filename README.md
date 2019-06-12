@@ -1,4 +1,4 @@
-# Tdod App
+# Todo App
 
 A simple responsive Todo app
 
